@@ -4,8 +4,6 @@ import matplotlib.pyplot as plt
 from constants import d_water, p_air, T
 
 # function that returns dvx/dt
-
-
 def model(vx, t, r):
     u = (145 * pow(10, -8) * pow(T, 1.5))/(T + 110.4)
     vis = u/p_air
@@ -55,7 +53,6 @@ plt.legend(loc='best')
 plt.show()
 
 # k = -(6*p_air*np.pi*pow(r,2)*vis)/(m*r)
-
 # # k2 = -(0.5*21.12*np.pi*r*u)/(2*m)
 # # k3 = -(0.5*6.3*pow(p_air, 0.5)*np.pi*pow(r, 2)
 # #        * pow(u, 0.5))/(m*pow(r, 0.5)*pow(2, 0.5))
