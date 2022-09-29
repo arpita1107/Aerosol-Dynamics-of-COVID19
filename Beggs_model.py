@@ -4,8 +4,6 @@ import matplotlib.pyplot as plt
 from constants import kv, kd, pv
 
 # function that returns di/dt
-
-
 def model(c0, t):
     ct = c0 * np.exp(-(kv*t))
     didt = pv * ct
